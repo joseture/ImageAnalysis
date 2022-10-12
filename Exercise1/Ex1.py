@@ -55,21 +55,22 @@ print(im_org.dtype)
 # io.show()
 
 #h is a tuple containing the count fo pixels and the value of the edges
-h = plt.hist(im_org.ravel(), bins=256)
-bin_no = 100
-count = h[0][bin_no]
-print(f"There are {count} pixel values in bin {bin_no}")
 
-bin_left = h[1][bin_no]
-bin_right = h[1][bin_no + 1]
-print(f"Bin edges: {bin_left} to {bin_right}")
+# h = plt.hist(im_org.ravel(), bins=256)
+# bin_no = 100
+# count = h[0][bin_no]
+# print(f"There are {count} pixel values in bin {bin_no}")
+
+# bin_left = h[1][bin_no]
+# bin_right = h[1][bin_no + 1]
+# print(f"Bin edges: {bin_left} to {bin_right}")
 
 
 #---------------Exercise 8----------------#
 
-y, x, _ = plt.hist(im_org.ravel(), bins=256)
+#y, x, _ = plt.hist(im_org.ravel(), bins=256)
 
-print(max(y))
+#print(max(y))
 
 
 #---------------Exercise 9----------------#
@@ -87,6 +88,24 @@ print(f"The pixel value at (r,c) = ({r}, {c}) is: {im_val}")
 
 #---------------Exercise 11----------------#
 
-mask = im_org > 150
-io.imshow(mask)
+# mask = im_org > 150
+# io.imshow(mask)
+# io.show()
+
+# im_org[mask] = 255
+# io.imshow(im_org)
+# io.show()
+
+
+#------------------------------------------#
+            #COLOR IMAGES#
+#------------------------------------------#
+
+#---------------Exercise 12----------------#
+
+im_name2 = "ardeche.jpg"
+im_col = io.imread(in_dir + im_name2)
+io.imshow(im_col)
 io.show()
+
+
