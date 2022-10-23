@@ -1,3 +1,4 @@
+
 # Data and material for exercise 2b - Change detection in videos
 
 ## Exercise script for change detection by image differencing
