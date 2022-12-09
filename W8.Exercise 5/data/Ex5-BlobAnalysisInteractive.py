@@ -1,4 +1,5 @@
 # Modified sligthly from
+
 # https://scikit-image.org/docs/dev/auto_examples/segmentation/plot_regionprops.html
 import plotly
 import plotly.express as px
@@ -7,7 +8,7 @@ from skimage import data, filters, measure, morphology, io, color
 
 
 def interactive_blobs():
-    in_dir = "data/"
+    in_dir = "W8.Exercise 5/data/"
     im_name = "lego_4_small.png"
 
     img_org = io.imread(in_dir + im_name)

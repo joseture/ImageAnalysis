@@ -10,7 +10,8 @@ import seaborn as sns
 import pandas as pd
 
 in_dir = "Exercise 1b/data/"
-txt_name = "irisdata.txt"
+txt_name = "pizza.txt"
+
 iris_data = np.loadtxt(in_dir + txt_name, comments="%")
 
 x = iris_data[0:50, 0:4]
